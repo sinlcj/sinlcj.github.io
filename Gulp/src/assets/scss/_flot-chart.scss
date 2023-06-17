@@ -1,0 +1,17 @@
+/* Flot Chart */
+.flot-chart {
+  display: block;
+  height: 222px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+.legendColorBox{
+	>div{
+		border: none !important;
+	}
+}

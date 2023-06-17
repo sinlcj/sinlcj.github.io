@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link @@if(active==='dashboard'){active}" href="dashboard-stie-admin.html">
+            <i class="fas fa-tachometer-alt" aria-hidden="true"></i> Dashboard <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(active==='listings'){active}" href="admin-listings.html">
+            <i class="fa fa-list-ul" aria-hidden="true"></i> Listings </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(active==='owners'){active}" href="user-list-owners.html">
+            <i class="fa fa-users" aria-hidden="true"></i> List Owners </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link @@if(active==='generals'){active}" href="user-generals.html">
+            <i class="fas fa-user-circle" aria-hidden="true"></i> General Users </a>
+        </li>
+
+      </ul>
+
+      <form class="d-none d-md-block">
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." required="">
+          <button type="submit" class="input-group-text">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
